@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -35,17 +35,17 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -57,43 +57,43 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="AR9331_PIN_NUMBERS" color="13" fill="1" visible="no" active="yes"/>
-<layer number="101" name="AR9331_PIN_NAMES" color="11" fill="1" visible="no" active="yes"/>
-<layer number="102" name="AR9331_FUNCTION_BLOCKS" color="14" fill="4" visible="no" active="yes"/>
-<layer number="103" name="TL-WR703N_OK" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="TL-WR703N_BOOTSTRAP" color="12" fill="1" visible="no" active="yes"/>
-<layer number="105" name="TL-WR703N_VIAS" color="9" fill="1" visible="no" active="yes"/>
-<layer number="106" name="TL-WR703N_RAIL" color="10" fill="1" visible="no" active="yes"/>
-<layer number="107" name="legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="108" name="TL-WR703N_LOGO" color="7" fill="1" visible="no" active="yes"/>
-<layer number="111" name="Grey" color="7" fill="1" visible="no" active="yes"/>
-<layer number="112" name="Black" color="15" fill="1" visible="no" active="yes"/>
-<layer number="113" name="WhiteOver" color="0" fill="1" visible="no" active="yes"/>
-<layer number="114" name="BlackOver" color="15" fill="1" visible="no" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
-<layer number="199" name="L$199" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="100" name="AR9331_PIN_NUMBERS" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="AR9331_PIN_NAMES" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="AR9331_FUNCTION_BLOCKS" color="14" fill="4" visible="yes" active="yes"/>
+<layer number="103" name="TL-WR703N_OK" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="TL-WR703N_BOOTSTRAP" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="TL-WR703N_VIAS" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="TL-WR703N_RAIL" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="TL-WR703N_LOGO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="Grey" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="Black" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="WhiteOver" color="0" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="BlackOver" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="L$199" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -104,7 +104,7 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Part Library for the TL-WR703N TP-Link 150MB 802.11n Wi-Fi Router&lt;/b&gt;
@@ -1997,7 +1997,7 @@
 <text x="9.25" y="4" size="0.254" layer="103" align="center-left">TL-WR703N Usable GPIO</text>
 <text x="9.25" y="3.5" size="0.254" layer="104" align="center-left">TL-WR703N GPIO Used by Bootstrap</text>
 <text x="9.25" y="3" size="0.254" layer="105" align="center-left">TL-WR703N GPIO with Via</text>
-<text x="9.25" y="2.5" size="0.254" layer="106" align="center-left">TL-WR703N GPIO Connected to Rail</text>
+<text x="9.25" y="2.5" size="0.254" layer="106" align="center-left">TL-WR703N Pin Connected to Rail</text>
 <wire x1="8.75" y1="6" x2="8.75" y2="2" width="0.127" layer="107"/>
 <wire x1="8.75" y1="2" x2="15.5" y2="2" width="0.127" layer="107"/>
 <wire x1="15.5" y1="2" x2="15.5" y2="6" width="0.127" layer="107"/>
@@ -2063,6 +2063,8 @@
 <rectangle x1="1.675" y1="-4.497" x2="2.135" y2="-3.377" layer="51"/>
 <rectangle x1="2.945" y1="-4.497" x2="3.405" y2="-3.377" layer="51"/>
 <rectangle x1="4.215" y1="-4.497" x2="4.675" y2="-3.377" layer="51"/>
+<rectangle x1="-5" y1="-5.45" x2="5" y2="-3.25" layer="41"/>
+<rectangle x1="-5" y1="3.25" x2="5" y2="5.45" layer="41"/>
 </package>
 <package name="USB-A_TH">
 <description>&lt;b&gt;USB A Through-Hole Socket&lt;/b&gt;
@@ -2214,7 +2216,7 @@
 <description>&lt;b&gt;2mm Shield Pad&lt;/b&gt;
 &lt;p&gt;Copyright &amp;copy; 2012, Michel Stempin, All rights reserved&lt;/p&gt;
 &lt;p&gt;Licenced under &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en"&gt;Creative Commons CC BY-SA 3.0&lt;/a&gt; license.&lt;/p&gt;</description>
-<smd name="1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" thermals="no" cream="no"/>
 </package>
 <package name="CRYSTAL_32_25">
 <description>&lt;b&gt;Crystal SMD 3.20 x 2.50 mm&lt;/b&gt;
@@ -2438,23 +2440,23 @@
 <smd name="2" x="0" y="0" dx="1.778" dy="0.635" layer="1" rot="R90"/>
 <smd name="1" x="-1.27" y="0" dx="1.778" dy="0.635" layer="1" rot="R90"/>
 <smd name="3" x="1.27" y="0" dx="1.778" dy="0.635" layer="1" rot="R90"/>
-<smd name="S$1" x="-2.286" y="0.762" dx="1.524" dy="1.016" layer="1" rot="R90"/>
-<smd name="S$2" x="2.286" y="0.762" dx="1.524" dy="1.016" layer="1" rot="R90"/>
+<smd name="S$1" x="-2.386" y="0.862" dx="1.524" dy="1.016" layer="1" rot="R90"/>
+<smd name="S$2" x="2.386" y="0.862" dx="1.524" dy="1.016" layer="1" rot="R90"/>
 <polygon width="0" layer="1">
-<vertex x="-2.54" y="0"/>
+<vertex x="-2.54" y="0.1"/>
 <vertex x="-2.54" y="2.54"/>
-<vertex x="-1.27" y="2.54"/>
-<vertex x="-1.27" y="1.524"/>
-<vertex x="-1.778" y="1.524"/>
-<vertex x="-1.778" y="0"/>
+<vertex x="-1.17" y="2.54"/>
+<vertex x="-1.17" y="1.524"/>
+<vertex x="-1.878" y="1.524"/>
+<vertex x="-1.878" y="0.1"/>
 </polygon>
 <polygon width="0" layer="1">
-<vertex x="2.54" y="0"/>
+<vertex x="2.54" y="0.1"/>
 <vertex x="2.54" y="2.54"/>
-<vertex x="1.27" y="2.54"/>
-<vertex x="1.27" y="1.524"/>
-<vertex x="1.778" y="1.524"/>
-<vertex x="1.778" y="0"/>
+<vertex x="1.17" y="2.54"/>
+<vertex x="1.17" y="1.524"/>
+<vertex x="1.878" y="1.524"/>
+<vertex x="1.878" y="0.1"/>
 </polygon>
 <wire x1="-2.109" y1="1.347" x2="-2.313" y2="1.143" width="0" layer="45" curve="90"/>
 <wire x1="-2.313" y1="1.143" x2="-2.313" y2="0.962" width="0" layer="45"/>
@@ -2510,12 +2512,12 @@
 <smd name="6" x="1.5" y="0" dx="2.7" dy="0.6" layer="1" rot="R90"/>
 <smd name="7" x="2.5" y="0" dx="2.7" dy="0.6" layer="1" rot="R90"/>
 <smd name="8" x="3.5" y="0" dx="2.7" dy="0.6" layer="1" rot="R90"/>
-<hole x="-5.85" y="0.1" drill="1.7"/>
-<hole x="5.85" y="0.1" drill="1.7"/>
-<pad name="S$1" x="-8.45" y="6.9" drill="1"/>
-<pad name="S$2" x="8.45" y="6.9" drill="1"/>
-<rectangle x1="-9.5" y1="4.7" x2="-7" y2="9" layer="1"/>
-<rectangle x1="7" y1="4.7" x2="9.5" y2="9" layer="1"/>
+<hole x="-6" y="0.15" drill="1.7"/>
+<hole x="6" y="0.15" drill="1.7"/>
+<pad name="S$1" x="-8.6" y="7" drill="1"/>
+<pad name="S$2" x="8.6" y="7" drill="1"/>
+<rectangle x1="-9.6" y1="4.8" x2="-7.2" y2="9.1" layer="1"/>
+<rectangle x1="7" y1="4.8" x2="9.6" y2="9.1" layer="1"/>
 <wire x1="0" y1="-1" x2="-7.25" y2="-1" width="0.127" layer="51"/>
 <wire x1="-7.25" y1="-1" x2="-7.25" y2="2" width="0.127" layer="51"/>
 <wire x1="-7.25" y1="2" x2="-7.25" y2="5.4" width="0.127" layer="51"/>
@@ -3132,8 +3134,7 @@
 <smd name="B23" x="-3" y="-5.169" dx="0.56" dy="0.28" layer="1" roundness="100" rot="R90" stop="no"/>
 <smd name="B25" x="-2" y="-5.169" dx="0.56" dy="0.28" layer="1" roundness="100" rot="R90" stop="no"/>
 <smd name="B27" x="-1" y="-5.169" dx="0.56" dy="0.28" layer="1" roundness="100" rot="R90" stop="no"/>
-<pad name="PAD" x="0" y="0" drill="1.5" stop="no"/>
-<rectangle x1="-2.6" y1="-2.6" x2="2.6" y2="2.6" layer="1"/>
+<pad name="PAD" x="0" y="0" drill="1.5" stop="no" thermals="no"/>
 <circle x="-6.85" y="5.4" radius="0.5" width="0.127" layer="21"/>
 <wire x1="-6" y1="5.58" x2="-5.58" y2="6" width="0.127" layer="51"/>
 <wire x1="-6" y1="-5.58" x2="-5.58" y2="-6" width="0.127" layer="51"/>
@@ -3880,7 +3881,7 @@
 <vertex x="-4.5" y="-4.829" curve="-90"/>
 <vertex x="-4.3" y="-5.029"/>
 </polygon>
-<rectangle x1="-2.575" y1="-2.575" x2="2.575" y2="2.575" layer="29"/>
+<rectangle x1="-2.7" y1="-2.7" x2="2.7" y2="2.7" layer="29"/>
 <text x="-6" y="6.25" size="0.8128" layer="25" ratio="20" rot="SR0">&gt;NAME</text>
 <text x="-6" y="-7.5" size="0.8128" layer="27" ratio="20">&gt;VALUE</text>
 <polygon width="0" layer="29">
