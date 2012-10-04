@@ -35,8 +35,29 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+/*******************************************************************************
+Default HTML tags
+*******************************************************************************/
+
 ol, ul {
   list-style: none;
+}
+
+i {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 8px;
+}
+
+ul li ul li {
+  list-style-type: circle;
+}
+
+b {
+  font-weight: 700;
 }
 
 blockquote, q {
@@ -51,16 +72,165 @@ a:focus {
   outline: none;
 }
 
+footer {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, Sans;
+  text-align: center;
+}
+
+/*******************************************************************************
+JQueryUI customized Black-Tie style
+*******************************************************************************/
+
+.ui-accordion-header a {
+  text-decoration: none;
+  color: white;
+  text-shadow: none;
+  background: inherit;
+}
+
+.ui-widget-content {
+  font-family: inherit;
+  box-sizing: border-box;
+  color:#6B6B6B;
+  background: transparent;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #777;
+  background: #1C1C1C url(http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/themes/black-tie/images/ui-bg_glass_40_111111_1x400.png) 50% 50% repeat-x;
+  font-weight: normal;
+  color: #E3E3E3;
+  border-color: black;
+  border-radius: 4px;
+}
+
+.ui-state-active .ui-icon {
+  background-image: url(http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/themes/black-tie/images/ui-icons_ffffff_256x240.png);
+}
+
+#menu {
+  position: absolute;
+  z-index: 10;
+  bottom: -125px;
+  left: 0;
+  height: 150px;
+}
+
+#main_content {
+  font-size: 12px;
+  font-family: Arial, Helvetica, Sans;
+}
+
+#main_content a {
+  color: #0069ba;
+}
+
+#main_content a[href="#"], #main_content a:hover[href="#"], #main_content a:active[href="#"] {
+  color: inherit;
+  text-shadow: none;
+}
+
+#credo {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  width: 400px;
+  height: 200 px;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#progression {
+    border: none;
+    box-shadow: none;
+    width: 887px;
+    height:850px;
+}
+
+#accordion div table tbody tr td {
+  border; none;
+  padding: none;
+}
+
+#accordion h3 a {
+  font-weight: 700;
+  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+#schematic {
+    width: 500px;
+    height: 354px;
+    background-color: white;
+    border: 1px solid black;
+    color: white;  /* for error messages, etc. */
+}
+
+#layout {
+    width: 500px;
+    height: 354px;
+    background-color: black;
+    border: 1px solid black;
+    color: black;  /* for error messages, etc. */
+}
+
+#model_3d {
+    width: 500px;
+    height: 354px;
+    background-color: white;
+    border: 1px solid black;
+    color: white;  /* for error messages, etc. */
+}
+
+#top_layout {
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid black;
+    color: black;  /* for error messages, etc. */
+}
+
+#bottom_layout {
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid black;
+    color: black;  /* for error messages, etc. */
+}
+
+#cpu tr td,#bom tr td {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+#faq h4 {
+  font-size: 16px;
+}
+
+a[rel=fancybox] img {
+    border: none;
+}
+
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
 
 body {
   box-sizing: border-box;
-  color:#373737;
+  color:#6B6B6B;
   background: #212121;
   font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -76,6 +246,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 36px;
   font-weight: 700;
+  background: url('../images/USBug_Logo.png') no-repeat;
+  padding-left: 50px;
 }
 
 h2 {
@@ -146,7 +318,7 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+//  max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
@@ -169,9 +341,6 @@ pre, code {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-
-
-
 }
 
 pre {
@@ -234,34 +403,6 @@ hr {
   background: url('../images/bg_hr.png') repeat-x center;
 }
 
-table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
- }
-
-th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  background: #373737;
-  color: #fff;
- }
-
-td {
-  padding: 10px;
-  border: 1px solid #373737;
- }
-
-form {
-  background: transparent;
-  padding: 5px;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -272,7 +413,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 1024px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -374,22 +515,6 @@ Full-Width Styles
   background: #212121;
 }
 
-#top_layout {
-    width: 807px;
-    height: 502px;
-    background-color: black;
-    border: 1px solid black;
-    color: black;  /* for error messages, etc. */
-}
-
-#bottom_layout {
-    width: 807px;
-    height: 502px;
-    background-color: black;
-    border: 1px solid black;
-    color: black;  /* for error messages, etc. */
-}
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -441,5 +566,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
