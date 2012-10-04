@@ -191,16 +191,16 @@ JQueryUI customized Black-Tie style
 }
 
 #top_layout {
-    width: 500px;
-    height: 200px;
+    width: 807px;
+    height: 502px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
 }
 
 #bottom_layout {
-    width: 500px;
-    height: 200px;
+    width: 807px;
+    height: 502px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
@@ -220,6 +220,10 @@ JQueryUI customized Black-Tie style
 
 a[rel=fancybox] img {
     border: none;
+}
+
+#donate {
+  float: right;
 }
 
 /*******************************************************************************
