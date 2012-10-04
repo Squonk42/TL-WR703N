@@ -34,7 +34,7 @@ There is also a closely related sister device as the TP-LINK® TL-MR3020 for the
 * The RJ45 Ethernet jack is not shielded
 * The UART is available on a nice 0.1” pitch through-hole connector (not mounted)
 * It is larger: 67 mm x 74 mm x 22 mm)
-* It is more expensive: 9 on eBay
+* It is more expensive: $39 on eBay
 
 ### Why?
 Despite its interesting characteristics, the TL-WR703N router suffers from a complete lack of information regarding its implementation:
