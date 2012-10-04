@@ -375,16 +375,16 @@ Full-Width Styles
 }
 
 #top_layout {
-    width: auto;
-    height: 100%;
+    width: 807px;
+    height: 502px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
 }
 
 #bottom_layout {
-    width: auto;
-    height: 100%;
+    width: 807px;
+    height: 502px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
