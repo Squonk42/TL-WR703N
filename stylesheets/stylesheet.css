@@ -374,7 +374,21 @@ Full-Width Styles
   background: #212121;
 }
 
+#top_layout {
+    width: 500px;
+    height: 354px;
+    background-color: black;
+    border: 1px solid black;
+    color: black;  /* for error messages, etc. */
+}
 
+#bottom_layout {
+    width: 500px;
+    height: 354px;
+    background-color: black;
+    border: 1px solid black;
+    color: black;  /* for error messages, etc. */
+}
 
 /*******************************************************************************
 Small Device Styles
