@@ -110,6 +110,42 @@ Although some progress has been made, like an almost exhaustive main AR9331 chip
 <p></p>This work took around 150 hours (2 week-ends and all the evenings in-between on my spare time) to produce a first PCB layout from the raw PCB top and bottom pictures.</p>
 
 <p>But spare time costs nothing, and hobbyist motivation is higher than normal paid work!</p>
+
+<h3>How?</h3>
+
+<p>If I remember correctly, Kean took the PCB pictures using an 18 Mpx camera. Removing all borders and cleaning up the original pictures, this resulted into images of 3090 x 3210 pixels. As the PCB is approximately 1.9" x 1.9", the achieved resolution is something close to 1600 dpi, or a little bit better than a common 1200/2400 dpi flat bed scanner in one direction, worse in the other.</p>
+
+<p>The drawback is that using a camera with a large depth of field, the image is not perfect. It contains:</p>
+
+<ul>
+<li>perspective (i.e. board edges are not parallel, and are not parallel either to the picture edges)</li>
+<li>a "barrel" effect due to the lens in macro mode</li>
+<li>pixels are not necessarily "square" in X and Y</li>
+<li>the actual scale is unknown</li>
+</ul>
+
+<p>The first step was thus to clean up the picture using the perspective correction function of PS as a picture editing tool to straighten borders.</p>
+
+<p>As for the other 2 next problems, the trick was to find something into these pictures that can be taken as a reference with known dimensions: the best guess was to take a large chip with numerous evenly-spaced pads, like the main AR9331 SoC U1 or the SDRAM chip U2. Using the same graphical editing program as used above, tools for correcting the lens "barrel" effect and scale differently in X and Y were used to get perfectly square pixels.</p>
+
+<p>Now, both sides couldn't be directly superimposed: holes, vias and the PCB contour itself did not match correctly. A good way to fix this problem was to use PS's "puppet warp transform" tool with the 2 PCB sides on separate layers with transparency. This tool allowed to place and drag pins over the picture, so it could be stretched locally. Using this technique, it was possible to make both sides match perfectly by first placing pins at the 4 corners, then adding more pins as required until a perfect match was obtained.</p>
+
+<p>At this point, 2 perfectly matched/square pictures with a resolution close to the original snapshots were available.</p>
+
+<p>The last problem related to unknown scale required to perform a resize operation on these pictures, so they can be superimposed with the PCB in the ECAD software used (<a href="http://www.cadsoftusa.com/eagle-pcb-design-software/?language=en">EagleCAD</a>). Again, the same chips as above were taken as references with known dimensions. Based on the datasheets, their footprint was first created into EagleCAD with exact "real" dimensions, then placed into an empty PCB file.</p>
+
+<p>As I still use Windows XP, I had to use the <a href="http://chime.tv/products/glass2k.shtml">Glass2K</a> utility to get either a transparent EagleCAD or picture window. Putting the EagleCAD window as large as possible on my screen, I aligned the footprint with the picture, by scaling the picture so that the round 25% picture scale was matching the EagleCAD full screen display.</p>
+
+<p>By adjusting EagleCAD zoom factor from the default 1.2 to 2, it is now possible on my screen to scale the picture to 50/100/200% while zooming along with EagleCAD, and thus zoom into details "almost" easily.</p>
+
+<p>That was all for the pictures, no editing any more! The drawback is that because of this last step, they are adjusted to my screen setup and cannot be shared with others easily.</p>
+
+<p>The next big job was then to create all the component footprints as an EagleCAD part library. Having 2 screens helped a lot in this case, and using transparency as above, it was possible to check that the footprint was correct directly into the picture. Still, this was a tedious job. As I was doing that, I took this opportunity to also create the corresponding schematic symbols and the parts for tying the symbols and the footprints together.</p>
+
+<p>Once all the parts were created, I placed them onto the PCB/picture as accurately as possible, then started to route all traces in between. There was a trick to integrate existing vias into a trace: I had to get info on the via to find its signal name, then name the trace using the same name, so they both belong to the same signal. Also, when there was only a single signal pad to connect to a via, I had to artificially add a dummy part to first create a ratsnet between 2 pads, get via info/name the ratsnest as explained, then destroy the dummy part...</p>
+
+<p>I used a 1 mm/0.05 mm grid, and only a few different trace widths. However, I had to create 2 signal "classes" with different clearance values to create the correct ground/power planes.</p>
+</p>
       </section>
     </div>
 
