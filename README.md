@@ -56,7 +56,7 @@ This is the work of a single person (Michel Stempin), based on the [TP-LINK® TL
 ###Where?
 All the resulting files are available in the [corresponding GitHub repository](https://github.com/Squonk42/TL-WR703N), and discussions are taking place into the corresponding threads from the [OpenWRT forum](https://forum.openwrt.org/).
 
-The CAD files are desgined using [EagleCAD v6.10](http://www.cadsoftusa.com/eagle-pcb-design-software/?language=en). Despite the fact that the free version is limited to 2 layers only and that the boards has more layers than that, this should not be too much of a problem, as there are only a few signals lcoated into the internal layers.
+The CAD files are designed using [EagleCAD v6.10](http://www.cadsoftusa.com/eagle-pcb-design-software/?language=en). Despite the fact that the free version is limited to 2 layers only and that the boards has more layers than that, this should not be too much of a problem, as there are only a few signals lcoated into the internal layers.
 
 So any question, idea, remark can be posted there!
 
@@ -64,3 +64,34 @@ So any question, idea, remark can be posted there!
 This work took around 150 hours (2 week-ends and all the evenings in-between on my spare time) to produce a first PCB layout from the raw PCB top and bottom pictures.
 
 But spare time costs nothing, and hobbyist motivation is higher than normal paid work!
+
+###How?
+If I remember correctly, Kean took the PCB pictures using an 18 Mpx camera. Removing all borders and cleaning up the original pictures, this resulted into images of 3090 x 3210 pixels. As the PCB is approximately 1.9" x 1.9", the achieved resolution is something close to 1600 dpi, or a little bit better than a common 1200/2400 dpi flat bed scanner in one direction, worse in the other.
+
+The drawback is that using a camera with a large depth of field, the image is not perfect. It contains:
+* perspective (i.e. board edges are not parallel, and are not parallel either to the picture edges)
+* a "barrel" effect due to the lens in macro mode
+* pixels are not necessarily "square" in X and Y
+* the actual scale is unknown
+
+The first step was thus to clean up the picture using the perspective correction function of PS as a picture editing tool to straighten borders.
+
+As for the other 2 next problems, the trick was to find something into these pictures that can be taken as a reference with known dimensions: the best guess was to take a large chip with numerous evenly-spaced pads, like the main AR9331 SoC U1 or the SDRAM chip U2. Using the same graphical editing program as used above, tools for correcting the lens "barrel" effect and scale differently in X and Y were used to get perfectly square pixels.
+
+Now, both sides couldn't be directly superimposed: holes, vias and the PCB contour itself did not match correctly. A good way to fix this problem was to use PS's "puppet warp transform" tool with the 2 PCB sides on separate layers with transparency. This tool allowed to place and drag pins over the picture, so it could be stretched locally. Using this technique, it was possible to make both sides match perfectly by first placing pins at the 4 corners, then adding more pins as required until a perfect match was obtained.
+
+At this point, 2 perfectly matched/square pictures with a resolution close to the original snapshots were available.
+
+The last problem related to unknown scale required to perform a resize operation on these pictures, so they can be superimposed with the PCB in the ECAD software used ([EagleCAD](http://www.cadsoftusa.com/eagle-pcb-design-software/?language=en)). Again, the same chips as above were taken as references with known dimensions. Based on the datasheets, their footprint was first created into EagleCAD with exact "real" dimensions, then placed into an empty PCB file.
+
+As I still use Windows XP, I had to use the [Glass2K](http://chime.tv/products/glass2k.shtml) utility to get either a transparent EagleCAD or picture window. Putting the EagleCAD window as large as possible on my screen, I aligned the footprint with the picture, by scaling the picture so that the round 25% picture scale was matching the EagleCAD full screen display.
+
+By adjusting EagleCAD zoom factor from the default 1.2 to 2, it is now possible on my screen to scale the picture to 50/100/200% while zooming along with EagleCAD, and thus zoom into details "almost" easily.
+
+That was all for the pictures, no editing any more! The drawback is that because of this last step, they are adjusted to my screen setup and cannot be shared with others easily.
+
+The next big job was then to create all the component footprints as an EagleCAD part library. Having 2 screens helped a lot in this case, and using transparency as above, it was possible to check that the footprint was correct directly into the picture. Still, this was a tedious job. As I was doing that, I took this opportunity to also create the corresponding schematic symbols and the parts for tying the symbols and the footprints together.
+
+Once all the parts were created, I placed them onto the PCB/picture as accurately as possible, then started to route all traces in between. There was a trick to integrate existing vias into a trace: I had to get info on the via to find its signal name, then name the trace using the same name, so they both belong to the same signal. Also, when there was only a single signal pad to connect to a via, I had to artificially add a dummy part to first create a ratsnet between 2 pads, get via info/name the ratsnest as explained, then destroy the dummy part...
+
+I used a 1 mm/0.05 mm grid, and only a few different trace widths. However, I had to create 2 signal "classes" with different clearance values to create the correct ground/power planes.
