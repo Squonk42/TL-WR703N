@@ -56,9 +56,11 @@ This is the work of a single person (Michel Stempin), based on the [TP-LINK® TL
 ###Where?
 All the resulting files are available in the [corresponding GitHub repository](https://github.com/Squonk42/TL-WR703N), and discussions are taking place into the corresponding threads from the [OpenWRT forum](https://forum.openwrt.org/).
 
+The CAD files are desgined using [EagleCAD v6.10](http://www.cadsoftusa.com/eagle-pcb-design-software/?language=en). Despite the fact that the free version is limited to 2 layers only and that the boards has more layers than that, this should not be too much of a problem, as there are only a few signals lcoated into the internal layers.
+
 So any question, idea, remark can be posted there!
 
-W###hen?
+###When?
 This work took around 150 hours (2 week-ends and all the evenings in-between on my spare time) to produce a first PCB layout from the raw PCB top and bottom pictures.
 
 But spare time costs nothing, and hobbyist motivation is higher than normal paid work!
