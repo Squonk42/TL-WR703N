@@ -6,20 +6,20 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.003125" altunitdist="mic" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -38,14 +38,14 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -65,46 +65,46 @@
 <layer number="105" name="TL-WR703N_VIAS" color="9" fill="1" visible="no" active="yes"/>
 <layer number="106" name="TL-WR703N_RAIL" color="10" fill="1" visible="no" active="yes"/>
 <layer number="107" name="legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="108" name="TL-WR703N_LOGO" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="TL-WR703N_LOGO" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="InternalVias" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="Grey" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="Black" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="WhiteOver" color="0" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="BlackOver" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="L$199" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="L$199" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <description>&lt;b&gt;TL-WR703N TP-Link 150MB 802.11n Wi-Fi Router&lt;/b&gt;
@@ -233,10 +233,49 @@
 <wire x1="11.52" y1="48.6" x2="9.01" y2="48.6" width="0" layer="20"/>
 <wire x1="9.01" y1="48.6" x2="9.01" y2="49.35" width="0" layer="20"/>
 <wire x1="9.01" y1="49.35" x2="2.56" y2="49.35" width="0" layer="20"/>
-<wire x1="2.56" y1="49.35" x2="2.56" y2="44.46" width="0" layer="20"/>
 <wire x1="2.56" y1="44.46" x2="2.56" y2="44.38" width="0" layer="47"/>
-<wire x1="2.56" y1="44.38" x2="1.47" y2="43.29" width="0" layer="20" curve="-90"/>
 <wire x1="1.47" y1="43.29" x2="0.03" y2="43.49" width="0" layer="20"/>
+<circle x="21.95" y="26.5" radius="0.21213125" width="0" layer="109"/>
+<circle x="23.55" y="26.65" radius="0.21213125" width="0" layer="109"/>
+<circle x="28.65" y="2.5" radius="0.21213125" width="0" layer="109"/>
+<circle x="10.2" y="12.95" radius="0.21213125" width="0" layer="109"/>
+<circle x="19.05" y="23.6" radius="0.21213125" width="0" layer="109"/>
+<circle x="17.5" y="13.95" radius="0.21213125" width="0" layer="109"/>
+<circle x="18.85" y="13.75" radius="0.21213125" width="0" layer="109"/>
+<circle x="11.55" y="19.65" radius="0.21213125" width="0" layer="109"/>
+<circle x="15.7" y="36" radius="0.21213125" width="0" layer="109"/>
+<circle x="5.05" y="41.8" radius="0.21213125" width="0" layer="109"/>
+<circle x="5" y="26.9" radius="0.21213125" width="0" layer="109"/>
+<circle x="16.4" y="30.25" radius="0.21213125" width="0" layer="109"/>
+<circle x="18.3" y="31.95" radius="0.21213125" width="0" layer="109"/>
+<circle x="12.4" y="32.35" radius="0.21213125" width="0" layer="109"/>
+<circle x="45.5" y="15.6" radius="0.21213125" width="0" layer="109"/>
+<circle x="25.15" y="22.6" radius="0.21213125" width="0" layer="109"/>
+<circle x="37.3" y="32.55" radius="0.21213125" width="0" layer="109"/>
+<circle x="35.05" y="27.6" radius="0.21213125" width="0" layer="109"/>
+<circle x="42.6" y="26.05" radius="0.21213125" width="0" layer="109"/>
+<circle x="4.55" y="32.9" radius="0.21213125" width="0" layer="109"/>
+<circle x="4.55" y="32.15" radius="0.21213125" width="0" layer="109"/>
+<circle x="4.45" y="31.25" radius="0.21213125" width="0" layer="109"/>
+<circle x="5.2" y="31" radius="0.21213125" width="0" layer="109"/>
+<circle x="12.1" y="27.75" radius="0.21213125" width="0" layer="109"/>
+<circle x="16.6" y="27.5" radius="0.21213125" width="0" layer="109"/>
+<circle x="17.5" y="26.8" radius="0.21213125" width="0" layer="109"/>
+<circle x="20.6" y="7.15" radius="0.21213125" width="0" layer="109"/>
+<wire x1="2.55924375" y1="49.35005625" x2="2.559278125" y2="44.37196875" width="0" layer="20"/>
+<wire x1="1.469334375" y1="43.2891" x2="1.59959375" y2="43.29511875" width="0" layer="20"/>
+<wire x1="1.59959375" y1="43.29511875" x2="1.7087125" y2="43.317440625" width="0" layer="20"/>
+<wire x1="1.7087125" y1="43.317440625" x2="1.815353125" y2="43.3472" width="0" layer="20"/>
+<wire x1="1.815353125" y1="43.3472" x2="1.912071875" y2="43.381921875" width="0" layer="20"/>
+<wire x1="1.912071875" y1="43.381921875" x2="2.00879375" y2="43.431525" width="0" layer="20"/>
+<wire x1="2.00879375" y1="43.431525" x2="2.10799375" y2="43.493528125" width="0" layer="20"/>
+<wire x1="2.10799375" y1="43.493528125" x2="2.2047125" y2="43.572890625" width="0" layer="20"/>
+<wire x1="2.2047125" y1="43.572890625" x2="2.293990625" y2="43.662175" width="0" layer="20"/>
+<wire x1="2.293990625" y1="43.662175" x2="2.395671875" y2="43.79361875" width="0" layer="20"/>
+<wire x1="2.395671875" y1="43.79361875" x2="2.479990625" y2="43.959784375" width="0" layer="20"/>
+<wire x1="2.479990625" y1="43.959784375" x2="2.5395125" y2="44.150753125" width="0" layer="20"/>
+<wire x1="2.5395125" y1="44.150753125" x2="2.55935" y2="44.269796875" width="0" layer="20"/>
+<wire x1="2.55935" y1="44.269796875" x2="2.559353125" y2="44.375203125" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="TL-WR703N">
@@ -3094,7 +3133,7 @@ design rules under a new name.</description>
 <param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="12mil"/>
+<param name="mlViaStopLimit" value="16mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -3210,8 +3249,9 @@ design rules under a new name.</description>
 <element name="U2" library="TL-WR703N" package="TSOP66" value="A3S56F40FTP" x="40.955" y="13.875" smashed="yes">
 <attribute name="NAME" x="46.003" y="25.294" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="37.425" y="13.975" size="0.8128" layer="27"/>
+<attribute name="WIDTH" value="16-bit" x="35.56" y="11.43" size="1.778" layer="27" display="off"/>
 </element>
-<element name="T1" library="TL-WR703N" package="H1601CG" value="H1601CG" x="23.256" y="32.39" smashed="yes">
+<element name="T1" library="TL-WR703N" package="H1601CG" value="ETH10_100_TRANSFO" x="23.256" y="32.39" smashed="yes">
 <attribute name="NAME" x="30.252" y="29.744" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="21.002" y="31.882" size="0.8128" layer="27"/>
 </element>
@@ -3519,28 +3559,28 @@ design rules under a new name.</description>
 <attribute name="NAME" x="2.821" y="11.258" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="2.417" y="12.32" size="0.8128" layer="27"/>
 </element>
-<element name="E$1" library="TL-WR703N" package="FIDUCIAL" value="" x="3.248" y="9.965"/>
-<element name="E$2" library="TL-WR703N" package="FIDUCIAL" value="" x="30.949" y="6.536"/>
-<element name="E$3" library="TL-WR703N" package="FIDUCIAL" value="" x="44.838" y="39.044"/>
-<element name="E$4" library="TL-WR703N" package="FIDUCIAL" value="" x="8.505" y="24.466"/>
-<element name="TP_IN" library="TL-WR703N" package="TEST_PAD" value="" x="31.965" y="1.964" smashed="yes">
+<element name="E$1" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="3.248" y="9.965"/>
+<element name="E$2" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="30.949" y="6.536"/>
+<element name="E$3" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="44.838" y="39.044"/>
+<element name="E$4" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="8.505" y="24.466"/>
+<element name="TP_IN" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="31.965" y="1.964" smashed="yes">
 <attribute name="NAME" x="28.702" y="0.986" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="30.965" y="-0.036" size="0.8128" layer="27"/>
 </element>
-<element name="TP_OUT" library="TL-WR703N" package="TEST_PAD" value="" x="33.439" y="1.964" smashed="yes">
+<element name="TP_OUT" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="33.439" y="1.964" smashed="yes">
 <attribute name="NAME" x="34.413" y="1.263" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="32.439" y="-0.036" size="0.8128" layer="27"/>
 </element>
-<element name="TPDDR" library="TL-WR703N" package="TEST_PAD" value="" x="43.264" y="25.913" smashed="yes">
+<element name="TPDDR" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="43.264" y="25.913" smashed="yes">
 <attribute name="NAME" x="42.722" y="26.532" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="42.264" y="23.913" size="0.8128" layer="27"/>
 </element>
-<element name="GND" library="TL-WR703N" package="SHIELD_PAD" value="" x="5.33" y="18.701"/>
+<element name="GND" library="TL-WR703N" package="SHIELD_PAD" value="TEST_PAD_SHIELD" x="5.33" y="18.701"/>
 <element name="Y1" library="TL-WR703N" package="CRYSTAL_32_25" value="" x="17.695" y="6.028" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.858" y="5.602" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="19.695" y="9.028" size="0.8128" layer="27" rot="R180"/>
 </element>
-<element name="J1" library="TL-WR703N" package="J0603" value="" x="2.182003125" y="19.64" smashed="yes" rot="R90">
+<element name="J1" library="TL-WR703N" package="J0603" value="JUMPER" x="2.182003125" y="19.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="4.164003125" y="19.867" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="4.087003125" y="19.005" size="0.8128" layer="27" rot="R90"/>
 </element>
@@ -3548,7 +3588,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="43.825" y="34.681" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="43.309" y="33.906" size="0.8128" layer="27" rot="R90"/>
 </element>
-<element name="USB1" library="TL-WR703N" package="USB-MICROB" value="" x="16.933" y="49.077" smashed="yes" rot="R180">
+<element name="USB1" library="TL-WR703N" package="USB-MICROB" value="USB-MICROB" x="16.933" y="49.077" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.158" y="45.693" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="18.888" y="52.102" size="0.8128" layer="27" rot="R180"/>
 </element>
@@ -3564,7 +3604,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="41.2525" y="30.208" size="0.8128" layer="25" rot="R180"/>
 <attribute name="VALUE" x="40.812" y="30.2235" size="0.8128" layer="27" rot="R180"/>
 </element>
-<element name="D1" library="TL-WR703N" package="SOT23-3" value="" x="14.674" y="34.041" smashed="yes" rot="R90">
+<element name="D1" library="TL-WR703N" package="SOT23-3" value="MMBD7000" x="14.674" y="34.041" smashed="yes" rot="R90">
 <attribute name="NAME" x="15.667" y="36.1025" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="17.6645" y="32.075" size="0.8128" layer="27" rot="R90"/>
 </element>
@@ -3576,37 +3616,37 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.39" y="39.829" size="0.8128" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="47.855" y="46.333" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="USB2" library="TL-WR703N" package="USB-A_TH" value="" x="-1.749" y="34.502" smashed="yes" rot="R270">
+<element name="USB2" library="TL-WR703N" package="USB-A_TH" value="USB-A_TH" x="-1.749" y="34.502" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.8799" y="26.1691" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="-1.147" y="39.6371" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="SW2" library="TL-WR703N" package="TACT_SWITCH_SPST_RA_SMT" value="" x="6.346" y="46.36" smashed="yes">
+<element name="SW2" library="TL-WR703N" package="TACT_SWITCH_SPST_RA_SMT" value="TACT_SWITCH_SPST" x="6.346" y="46.36" smashed="yes">
 <attribute name="NAME" x="10.057" y="46.185" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="4.346" y="44.36" size="0.8128" layer="27"/>
 </element>
-<element name="J3" library="TL-WR703N" package="RJ45_LP_RA_SMT" value="" x="33.412" y="40.391" smashed="yes">
+<element name="J3" library="TL-WR703N" package="RJ45_LP_RA_SMT" value="RJ45_2SH" x="33.412" y="40.391" smashed="yes">
 <attribute name="NAME" x="34.413" y="37.518" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="36.412" y="37.391" size="0.8128" layer="27"/>
 </element>
-<element name="E$5" library="TL-WR703N" package="FIDUCIAL" value="" x="43.364" y="43.951" rot="MR0"/>
-<element name="E$6" library="TL-WR703N" package="FIDUCIAL" value="" x="12.692" y="5.72" rot="MR0"/>
-<element name="TPGND" library="TL-WR703N" package="TEST_PAD" value="" x="7.208" y="33.787" smashed="yes" rot="MR0">
+<element name="E$5" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="43.364" y="43.951" rot="MR0"/>
+<element name="E$6" library="TL-WR703N" package="FIDUCIAL" value="FIDUCIAL" x="12.692" y="5.72" rot="MR0"/>
+<element name="TPGND" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="7.208" y="33.787" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.213" y="34.506" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="8.208" y="31.787" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="TP3V3" library="TL-WR703N" package="TEST_PAD" value="" x="5.861" y="33.506" smashed="yes" rot="MR0">
+<element name="TP3V3" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="5.861" y="33.506" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.771" y="31.966" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="6.861" y="31.506" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="TP2V0" library="TL-WR703N" package="TEST_PAD" value="" x="17.187" y="28.399" smashed="yes" rot="MR0">
+<element name="TP2V0" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="17.187" y="28.399" smashed="yes" rot="MR0">
 <attribute name="NAME" x="19.081" y="31.762" size="0.8128" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="18.187" y="26.399" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="TP2V5" library="TL-WR703N" package="TEST_PAD" value="" x="16.629" y="23.55" smashed="yes" rot="MR0">
+<element name="TP2V5" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="16.629" y="23.55" smashed="yes" rot="MR0">
 <attribute name="NAME" x="18.441" y="22.237" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="17.629" y="21.55" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="TP1V2" library="TL-WR703N" package="TEST_PAD" value="" x="23.256" y="17.046" smashed="yes" rot="MR0">
+<element name="TP1V2" library="TL-WR703N" package="TEST_PAD" value="TEST_PAD" x="23.256" y="17.046" smashed="yes" rot="MR0">
 <attribute name="NAME" x="25.372" y="15.479" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="24.256" y="15.046" size="0.8128" layer="28" rot="MR0"/>
 </element>
@@ -3690,7 +3730,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.494" y="24.293" size="0.8128" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="9.79" y="23.935" size="0.8128" layer="28" rot="MR90"/>
 </element>
-<element name="D2" library="TL-WR703N" package="SOT23-3" value="" x="15.79" y="32.08199375" smashed="yes" rot="MR270">
+<element name="D2" library="TL-WR703N" package="SOT23-3" value="MMBD7000" x="15.79" y="32.08199375" smashed="yes" rot="MR270">
 <attribute name="NAME" x="16.352" y="35.58149375" size="0.8128" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="18.7805" y="34.04799375" size="0.8128" layer="28" rot="MR270"/>
 </element>
@@ -4078,11 +4118,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="14.67" y="37.901" size="0.8128" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.496" y="40.087" size="0.8128" layer="28" rot="MR90"/>
 </element>
-<element name="U6" library="TL-WR703N" package="SOT23-5" value="" x="17.491" y="42.854" smashed="yes" rot="MR0">
+<element name="U6" library="TL-WR703N" package="SOT23-5" value="TPS2041BDBV" x="17.491" y="42.854" smashed="yes" rot="MR0">
 <attribute name="NAME" x="18.042496875" y="40.356" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="19.457" y="39.8635" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="U5" library="TL-WR703N" package="SOT23-5" value="" x="3.094" y="38.586" smashed="yes" rot="MR0">
+<element name="U5" library="TL-WR703N" package="SOT23-5" value="UNKNOWN_BUCK" x="3.094" y="38.586" smashed="yes" rot="MR0">
 <attribute name="NAME" x="6.2395" y="38.251" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="5.06" y="35.5955" size="0.8128" layer="28" rot="MR0"/>
 </element>
@@ -4093,12 +4133,13 @@ design rules under a new name.</description>
 <element name="U3" library="TL-WR703N" package="SOP8" value="" x="6.611" y="19.832" smashed="yes" rot="MR180">
 <attribute name="NAME" x="2.121" y="20.252" size="0.8128" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="4.071" y="26.182" size="0.8128" layer="28" rot="MR180"/>
+<attribute name="DENSITY" value="32 Mbit" x="63.5" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="AN1" library="TL-WR703N" package="WIFI_ANTENNA" value="" x="5.961" y="5.782" smashed="yes" rot="MR0">
+<element name="AN1" library="TL-WR703N" package="WIFI_ANTENNA" value="WIFI_ANTENNA" x="5.961" y="5.782" smashed="yes" rot="MR0">
 <attribute name="NAME" x="9.261" y="4.432" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="6.961" y="-0.218" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="E$9" library="TL-WR703N" package="GND_3CONTACT" value="" x="38.661" y="27.132" rot="MR0"/>
+<element name="E$9" library="TL-WR703N" package="GND_3CONTACT" value="GND_3CONTACTS" x="38.661" y="27.132" rot="MR0"/>
 <element name="C119" library="TL-WR703N" package="C0603" value="" x="20.061" y="43.432" smashed="yes" rot="MR0">
 <attribute name="NAME" x="20.661" y="42.282" size="0.8128" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="21.061" y="40.432" size="0.8128" layer="28" rot="MR0"/>
@@ -4139,7 +4180,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="36.096" y="22.867" size="0.8128" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="38.196" y="21.577" size="0.8128" layer="28" rot="MR0"/>
 </element>
-<element name="E$7" library="TL-WR703N" package="CC-BY-SA" value="" x="50" y="11"/>
+<element name="E$7" library="TL-WR703N" package="CC-BY-SA" value="CC-BY-SA" x="50" y="11"/>
 </elements>
 <signals>
 <signal name="VDD" class="2">
