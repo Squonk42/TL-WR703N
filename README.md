@@ -37,18 +37,18 @@ There is also a closely related sister device as the TP-LINK® TL-MR3020 for the
 * It is more expensive: $39 on eBay
 
 ### Why?
-Despite its interesting characteristics, the TL-WR703N router suffers from a complete lack of information regarding its implementation:
+Because of these interesting characteristics, people started to imagine unforeseen applications for the cheapest available embedded Linux platform on the market, ranging from software-only firmware customization, to hardware hacks involving fine pitch soldering in order to control various physical devices.
 
-* No source code provided by the OEM manufacturer, although it is clearly using open-source software for building its firmware
+The manufacturer (TP-LINK) is making its best efforts to comply with the requirements of the GPL license by providing access to [sources releases of the modified GPL software used in the original firmware](http://www.tp-link.com/en/support/gpl/) (actually, those of the related [TL-MR3020 device](http://www.tp-link.com/en/support/gpl/?categoryid=547), but they are close enough). Although not useable as is, all these modifications has been ported to several existing embedded Linux distributions, and the dedicated embedded [OpenWRT distribution](https://openwrt.org/) is an excellent choice for its easy build system and support for bleeding-edge packages.
+
+Naturally, the hardware-focused projects using the TL-WR703N tend to be centralized in a few OpenWRT forum threads ([[1]](https://forum.openwrt.org/viewtopic.php?id=36471), [[2]](https://forum.openwrt.org/viewtopic.php?id=38994), [[3]](https://forum.openwrt.org/viewtopic.php?id=39567), [[4]](https://forum.openwrt.org/viewtopic.php?id=34437), and [[5]](https://forum.openwrt.org/viewtopic.php?id=31729)), and rapidly focused on the research of available I/O resources and low-level electronic understanding. In this regard, the TL-WR703N router suffers from a complete lack of information reagarding its hardwar eimplementation:
+
 * The datasheet for the main chip (Atheros AR9331) is only available under NDA (Non-Disclosure Agreement)
 * No available schematic, layout or BOM (Bill Of Materials) files
 
-However, people started to imagine unforeseen applications for the cheapest available embedded Linux platform on the market, ranging from software-only firmware customization using the dedicated [OpenWRT distribution](https://openwrt.org/), to hardware hacks involving fine pitch soldering in order to control various physical devices.
+Although some progress has been made, like an almost exhaustive main AR9331 chip pinout and a component-by-component description, only a full reverse-engineering work can provide the answers to all the questions people will have on the TL-WR703N hardware.
 
-The hardware-focused projects using the TL-WR703N tend to be centralized in a few OpenWRT forum threads ([[1]](https://forum.openwrt.org/viewtopic.php?id=36471), [[2]](https://forum.openwrt.org/viewtopic.php?id=38994), [[3]](https://forum.openwrt.org/viewtopic.php?id=39567), [[5]](https://forum.openwrt.org/viewtopic.php?id=34437), and [[6]](https://forum.openwrt.org/viewtopic.php?id=31729)), and rapidly focused on the research of available I/O resources and low-level electronic understanding.
-Although some progress has been made, like an almost exhaustive main AR9331 chip pinout and a component-by-component description, only a full reverse-engineering work can provide the answers to all the questions on the hardware.
-
-So this reverse-engineering of the TP-LINK® TL-WR703N router hardware is not purposed to reproduce it, but to provide a full understanding of it. This job has not economic goal, being aimed only towards acquiring knowledge on this amazing little device.
+So the goal of this reverse-engineering of the TP-LINK® TL-WR703N router hardware is not to reproduce the device as is, as both the main chip is not available for retail, and because it would be difficult to beat the already low prices achieved by the Chinese manufacturer anyway. But the main purpose of this work is to provide the knowledge required to fully understand the hardware of this amazing little device.
 
 ###Who?
 This is the work of a single person (Michel Stempin), based on the [TP-LINK® TL-WR703N teardown](http://www.kean.com.au/oshw/WR703N/teardown/) performed by Kean from the OpenWRT forum.
