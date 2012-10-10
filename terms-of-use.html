@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="TL-WR703N : Reverse-Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router." />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://seadragon.com/ajax/0.8/seadragon-min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>TL-WR703N</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Squonk42/TL-WR703N">View on GitHub</a>
+
+          <h1 id="project_title">TL-WR703N</h1>
+          <form id ="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+            <input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+           </form>
+          <h2 id="project_tagline">Reverse-Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router.</h2>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Squonk42/TL-WR703N/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Squonk42/TL-WR703N/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Squonk42/TL-WR703N">View on GitHub</a>
+          <h1 id="project_title">TL-WR703N</h1>
+          <h2 id="project_tagline">Reverse-Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router.</h2>
+	  <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/Squonk42/TL-WR703N/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/Squonk42/TL-WR703N/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+	<h2 id="terms-of-use">Terms of use</h2>
+	<p>This web site operated under my direction (also known as the "Michel Stempin" or "the owner") are offered to you on the condition that you agree to abide by, without modification, both the terms, conditions, and notices on this page (collectively, the "Terms of Use"), and the other legal statements found on this site. These include, but are not limited to, my <a href="privacy.html">privacy policy</a> and the <a href="liability-disclaimer.html">liability disclaimer</a>.</p>
+	<p>If you don't agree with all of the Terms of Use, you can't use this site. Your use of this site constitutes your agreement to the Terms of Use. Seriously, these are the terms; if you don't like them, leave.</p>
+	<p>In the event that these Terms of Use conflict with other terms and guidelines contained within the site, the other terms and guidelines shall control.</p>
+	<h2 id="ownership-and-use-limitations">Ownership and use limitations</h2>
+	<p>Except where otherwise specified, the site are provided under the terms of <a href="http://creativecommons.org/licenses/by-sa/3.0/">the Attribution-ShareAlike 3.0 Unported variant of the Creative Commons Public License</a> ("CCPL" or "License"). The site is protected by copyright and/or other applicable law. Any use of the site other than as authorized under this license or copyright law is prohibited.</p>
+	<h2 id="links-to-other-sites">Links to other sites</h2>
+	<p>This site link to websites maintained by third parties. Because I have no control over those sites, you acknowledge and agree that I am not responsible for anything on or available through those sites.</p>
+	<p>I believe, but do not warrant or represent, that people who make information available on the web expect that the information will be publicly and widely available. I also believe, but do not warrant or represent, that making links to publicly accessible web pages is legally permissible and consistent with the common, customary expectations of those who make use of the web. As a side note, I hold such parties, institutions, and persons (collectively, "knuckleheads") who disagree with the freedom to link to publicly-available sites in very low regard.</p>
+	<h2 id="no-security-representations-or-warranties-are-made">No security representations or warranties are made</h2>
+	<p>I don't make any representations or warranties as to the security of any information (including, without limitation, credit card and other personal information) which is requested to given to any third party or that the site is free from viruses or other potentially damaging programs. I obviously have a very strong interest in partnering with web stores and distributors who will treat your information securely, but just me wanting it doesn't make it so.</p>
+	<h2 id="access-restriction">Access restriction</h2>
+	<p>I reserve the right to deny at its sole discretion any user access to this site or any portion thereof without notice.</p>
+	<h2 id="no-unlawful-or-prohibited-use">No unlawful or prohibited use</h2>
+	<p>As a condition of your use of this site, you won't use this site for any purpose that is unlawful or prohibited by these Terms of Use. You may not use this site in any manner that could overburden or impair any of this site servers, or the network(s) connected to any server, or interfere with any other party's use and enjoyment of any of the site or services thereunder. You may not attempt to gain unauthorized access to any non-public portion of this site. You may not obtain or attempt to obtain access to any information not intentionally made available to the public through this site except as authorized by me.</p>
+	<h2 id="feedback-and-confidential-information">Feedback and confidential information</h2>
+	<p>I do not want to receive confidential or proprietary information from you through this site unless specifically requested by me and on a secure web page. Except where expressly provided otherwise by me, all information submitted to me shall be considered non-confidential and my property. By submitting information to me, you agree to a no-charge assignment to me of all worldwide rights, title, and interest in copyrights and other intellectual property rights to the information.</p>
+	<h2 id="indemnity">Indemnity</h2>
+	<p>I make no representations about the suitability, reliability, timeliness, or accuracy of the information contained on this site for any purpose. All such information is provided "as is" without warranty of any kind. I hereby disclaims all warranties and conditions with regard to the information, including all implied warranties and conditions of security, merchantability, fitness for a particular purpose, title, and non-infringement.</p>
+	<p>I make no warranty that (1) this site will meet your requirements, (2) the information on this site will be timely or error-free, (3) the quality of any products, services, information, or other material purchased or obtained by you through this site will meet your expectations, and (4) any errors in this site will be corrected.</p>
+	<p>In no event shall I be liable for any direct, indirect, punitive, incidental, special, or consequential damages or any damages whatsoever including, without limitation, damages for loss of use, data, or profits, arising out of or in any way connected with (i) the improper and/or illegal use of products purchased through this site or (ii) modifications made to products purchased through this site or (iii) the use or performance of this site; (iv) the delay or inability to use this site; (v) the provision of or failure to provide any service; (vi) the information, software, products, or services obtained through this site, (vii) this site or otherwise arising out of the use of this site, whether based on contract, tort, strict liability, or otherwise, even if I or any of my suppliers has been advised of the possibility of damages.</p>
+	<p>Because some states or jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages, the above limitation may not apply to you. If you are dissatisfied with any portion of this site, or with any of these terms of use, your sole and exclusive remedy is to discontinue using such site.</p>
+	<h2 id="modification-of-these-terms-of-use">Modification of these terms of use</h2>
+	<p>I reserve the right to change these Terms of Use at any time. All changes to these Terms of Use and this site shall be effective immediately. You are responsible for regularly reviewing these Terms of Use. Continued use of this site following changes shall constitute your acceptance of the changes.</p>
+	<h2 id="general">General</h2>
+	<p>I reserve the right to make any changes to this site at my sole discretion without telling you. I reserve the right to deny access to this site to anyone at anytime.</p>
+	<p>Your access to and use of this site is governed by the laws applicable in Bordeaux, France. You consent to the exclusive jurisdiction and venue of courts in France Massachusetts in all disputes arising out of or relating to the use of this site or use of its products. Use of this site is unauthorized in any jurisdiction that does not give effect to all provisions of these Terms of Use, including without limitation this paragraph.</p>
+	<p>You agree that no joint venture, partnership, employment, or agency relationship exists between the you and me as a result of these Terms of Use or the use of this site. You agree not to hold himself or herself out as my representative, agent, or employee.</p>
+	<p>Of course, my obligations under these Terms of Use is subject to existing laws and legal process and nothing contained in these Terms of Use is in derogation of my right to comply with law enforcement requests or requirements relating to your use of this site or any information provided to or gathered by me with respect to such use. While I view the recent gutting of the Foreign Intelligence Surveillance Act of 1978 as an abrogation of liberty, I'm trying to run a business here. I'll tell the cops your IP address with no more resistance than is legally permissible, but I won't be happy about it.</p>
+	<p>If any part of these Terms of Use is determined to be invalid or unenforceable pursuant to applicable law including, but not limited to, the warranty disclaimers and liability limitations set forth above, then the invalid or unenforceable provision will be deemed superseded by a valid, enforceable provision that most closely matches the intent of the original provision and the remainder of these Terms of Use shall continue in effect.</p>
+	<p>These Terms of Use and the documents linked in the opening constitute the entire agreement between you and me with respect to this site. They supersedes all prior or contemporaneous communications and proposals between you and me.</p>
+	<h2 id="contact-info">Contact info</h2>
+	<p>Contact michel dot stempin at wanadoo dot fr with questions about this site.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap">
+      <footer>
+	<p>TL-WR703N is maintained by <a href="https://github.com/Squonk42">Squonk42</a></p>
+	<p>This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a> except where otherwise noted.</p>
+	<p><a href="privacy.html">Privacy policy</a> | <a href="terms-of-use.html">Terms of use</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
