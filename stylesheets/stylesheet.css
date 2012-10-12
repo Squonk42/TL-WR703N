@@ -167,8 +167,8 @@ JQueryUI customized Black-Tie style
 }
 
 #schematic {
-    width: 500px;
-    height: 354px;
+    width: 837px;
+    height: 575px;
     background-color: white;
     border: 1px solid black;
     color: white;  /* for error messages, etc. */
@@ -191,16 +191,16 @@ JQueryUI customized Black-Tie style
 }
 
 #top_layout {
-    width: 807px;
-    height: 502px;
+    width: 837px;
+    height: 512px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
 }
 
 #bottom_layout {
-    width: 807px;
-    height: 502px;
+    width: 837px;
+    height: 512px;
     background-color: black;
     border: 1px solid black;
     color: black;  /* for error messages, etc. */
