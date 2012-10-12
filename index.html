@@ -4,7 +4,7 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="TL-WR703N : Reverse-Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router." />
+    <meta name="description" content="TL-WR703N : Reverse-Engineering work on the TL-WR703N 150M 802.11n Wi-Fi Router." />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="http://seadragon.com/ajax/0.8/seadragon-min.js"></script>
@@ -28,7 +28,7 @@
 ">
             <input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
            </form>
-          <h2 id="project_tagline">Reverse-Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router.</h2>
+          <h2 id="project_tagline">Reverse-Engineering work on the TL-WR703N 150M 802.11n Wi-Fi Router.</h2>
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/Squonk42/TL-WR703N/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/Squonk42/TL-WR703N/tarball/master">Download this project as a tar.gz file</a>
@@ -44,7 +44,7 @@
         <div id="bottom_layout"></div>
         <h3>What?</h3>
 
-<p>Unlike what it is marketed for, the TP-LINK® TL-WR703N is not a “3G travel router”: it does not include a 3G modem at all, it simply means that the firmware support external USB 3G modems!</p>
+<p>Unlike what it is marketed for, the TL-WR703N is not a “3G travel router”: it does not include a 3G modem at all, it simply means that the firmware support external USB 3G modems!</p>
 
 <p>Despite this shortcoming, at less than $23, this device is the cheapest Wi-Fi router you can get west of the Pecos River! For this ridiculously low price, you get:</p>
 
@@ -68,7 +68,7 @@
 <li>An UART accessible via 2 tiny pads that provides access to the uBoot bootloader and the Linux 2.6 console</li>
 </ul><p>This device was released in August 2011 in China, and is not exported, though it is easy to get one on eBay.</p>
 
-<p>There is also a closely related sister device as the TP-LINK® TL-MR3020 for the export market, with the following differences:</p>
+<p>There is also a closely related sister device as the TL-MR3020 for the export market, with the following differences:</p>
 
 <ul>
 <li>It is CE/FCC certified</li>
@@ -84,7 +84,7 @@
 
 <p>Because of these interesting characteristics, people started to imagine unforeseen applications for the cheapest available embedded Linux platform on the market, ranging from software-only firmware customization, to hardware hacks involving fine pitch soldering in order to control various physical devices.</p>
 
-<p>The manufacturer (TP-LINK) is making its best efforts to comply with the requirements of the GPL license by providing access to <a href="http://www.tp-link.com/en/support/gpl/">sources releases of the modified GPL software used in the original firmware</a> (actually, those of the related <a href="http://www.tp-link.com/en/support/gpl/?categoryid=547">TL-MR3020 device</a>, but they are close enough). Although not useable as is, all these modifications has been ported to several existing embedded Linux distributions, and the dedicated embedded <a href="https://openwrt.org/">OpenWRT distribution</a> is an excellent choice for its easy build system and support for bleeding-edge packages.</p>
+<p>The manufacturer is making its best efforts to comply with the requirements of the GPL license by providing access to <a href="http://www.tp-link.com/en/support/gpl/">sources releases of the modified GPL software used in the original firmware</a> (actually, those of the related <a href="http://www.tp-link.com/en/support/gpl/?categoryid=547">TL-MR3020 device</a>, but they are close enough). Although not useable as is, all these modifications has been ported to several existing embedded Linux distributions, and the dedicated embedded <a href="https://openwrt.org/">OpenWRT distribution</a> is an excellent choice for its easy build system and support for bleeding-edge packages.</p>
 
 <p>Naturally, the ardware-focused projects using the TL-WR703N tend to be centralized in a few OpenWRT forum threads (<a href="https://forum.openwrt.org/viewtopic.php?id=36471">[1]</a>, <a href="https://forum.openwrt.org/viewtopic.php?id=38994">[2]</a>, <a href="https://forum.openwrt.org/viewtopic.php?id=39567">[3]</a>, <a href="https://forum.openwrt.org/viewtopic.php?id=34437">[4]</a>, and <a href="https://forum.openwrt.org/viewtopic.php?id=31729">[5]</a>), and rapidly focused on the research of available I/O resources and low-level electronic understanding. In this regard, the TL-WR703N router suffers from a complete lack of information reagarding its hardware implementation:</p>
 
@@ -95,11 +95,11 @@
 
 <p>Although some progress has been made, like an almost exhaustive main AR9331 chip pinout and a component-by-component description, only a full reverse-engineering work can provide the answers to all the questions people will have on the TL-WR703N hardware.</p>
 
-<p>So the goal of this reverse-engineering of the TP-LINK® TL-WR703N router hardware is not to reproduce the device as is, as both the main chip is not available for retail, and because it would be difficult to beat the already low prices achieved by the Chinese manufacturer anyway. But the main purpose of this work is to provide the knowledge required to fully understand the hardware of this amazing little device.</p>
+<p>So the goal of this reverse-engineering of the TL-WR703N router hardware is not to reproduce the device as is, as both the main chip is not available for retail, and because it would be difficult to beat the already low prices achieved by the Chinese manufacturer anyway. But the main purpose of this work is to provide the knowledge required to fully understand the hardware of this amazing little device.</p>
 
 <h3>Who?</h3>
 
-<p>This is the work of a single person (<a href="https://github.com/Squonk42">Squonk42</a>), based on the <a href="http://www.kean.com.au/oshw/WR703N/teardown/">TP-LINK® TL-WR703N teardown</a> performed by Kean from the OpenWRT forum.</p>
+<p>This is the work of a single person (<a href="https://github.com/Squonk42">Squonk42</a>), based on the <a href="http://www.kean.com.au/oshw/WR703N/teardown/">TL-WR703N teardown</a> performed by Kean from the OpenWRT forum.</p>
 
 <h3>Where?</h3>
 
