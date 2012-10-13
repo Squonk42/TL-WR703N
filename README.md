@@ -3,6 +3,8 @@ TL-WR703N
 
 Reverse Engineering work on the TP-LINK® TL-WR703N 150M 802.11n Wi-Fi Router
 
+Check the http://squonk42.github.com/TL-WR703N/ web page for details.
+
 ### What?
 Unlike what it is marketed for, the TP-LINK® TL-WR703N is not a “3G travel router”: it does not include a 3G modem at all, it simply means that the firmware support external USB 3G modems!
 
