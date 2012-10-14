@@ -6065,6 +6065,31 @@ Licenced under &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en
 <text x="520.446" y="-381.127" size="2.54" layer="94">Sheet:</text>
 <frame x1="-1.27" y1="-386.08" x2="563.88" y2="1.27" columns="10" rows="8" layer="94"/>
 </symbol>
+<symbol name="+3V3">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="+3V3" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="+2V5">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="+2V5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="+2V0">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="+2V0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="+1V2">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="+1V2" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VDD">
+<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AR9331-" prefix="U">
@@ -7040,6 +7065,71 @@ Licenced under &lt;a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en
 DIN A3, landscape with location and doc. field</description>
 <gates>
 <gate name="G$1" symbol="A2L-LOC" x="1.524" y="386.842"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3">
+<description>&lt;b&gt;+3.3V Supply&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+2V5">
+<description>&lt;b&gt;+2.5V Supply&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+2V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+2V0">
+<description>&lt;b&gt;+2.0V Supply&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+2V0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V2">
+<description>&lt;b&gt;+1.2V Supply&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD">
+<description>&lt;b&gt;VDD Supply&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
