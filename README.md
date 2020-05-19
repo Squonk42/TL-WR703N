@@ -12,7 +12,7 @@ Despite this shortcoming, at less than $23, this device is the cheapest Wi-Fi ro
 
 * A clean, small (57 mm x 57 mm x 18 mm) shiny white/light blue cover plastic case with rounded corners that is pretty easy to open with just a spudger or any other thin and resistant tool
 * An Atheros AR9331 chipset with
- * An Atheros AR7040 400 MHz MISP24kc CPU
+ * An Atheros AR7040 400 MHz MIPS24kc CPU
  * Integrated 802.11n 150 Mbps (130 Mbps real) Wi-Fi with 20 dBm (100 mW) output power
 * 4 MB of serial (SPI) Flash memory
 * 32 MB of DDR SDRAM
